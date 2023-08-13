@@ -15,6 +15,10 @@ header {
     text-align: center;
 }
 
+h2 {
+    color: #444;
+}
+
 nav ul {
     list-style: none;
 }
