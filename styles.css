@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, p, ul {
+body, h1, h2, h3, p, ul, li, form {
     margin: 0;
     padding: 0;
 }
@@ -15,31 +15,56 @@ header {
     text-align: center;
 }
 
-h2 {
-    color: #444;
-}
-
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 1rem 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
 }
 
 section {
     padding: 2rem;
 }
 
-footer {
-    text-align: center;
+#about div {
+    margin-bottom: 2rem;
     padding: 1rem;
-    background-color: #333;
-    color: #fff;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+#about h3 {
+    margin-bottom: 1rem;
+}
+
+#highlights ul {
+    margin-left: 2rem;
+}
+
+#publications li {
+    margin-bottom: 0.5rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    margin-bottom: 1rem;
 }
