@@ -10,42 +10,77 @@
     <header>
         <h1>Dr. Md. Sherajul Islam</h1>
         <h2>Nanomaterials Professor</h2>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research">Research Interests</a></li>
+            <li><a href="#highlights">Research Highlights</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#current Research Project">Contact</a></li>
+             <li><a href="#Student Supervision">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Welcome to my personal webpage! I am a professor in the Department of Electrical and Electronic Engineering at the Khulna university of Engineering & Technology where I have been a faculty member since 2007, with an expertise in computational materials engineering. I received my Ph.D. in Electrical Engineering from the University of Fukui in 2014. I'm a recipient of Monbukagakshu(MEXT) scholarship by Japan Government and President’s International Fellowship Initiative (PIFI) Award. I'm authored more than 100 peer-reviewed publications in esteemed journals and international conferences. I'm a member of IEEE and IEB, and actively participate in journal paper and grant reviewing at the international level.</p>
+        <div id="personal-info">
+            <h3>Personal Information</h3>
+            <ul>
+                <li><strong> Given Name:</strong> Md. Sherajul</li>
+                <li><strong>Family Name:</strong> Islam</li>
+                <li><strong>Date of Birth:</strong> October 13, 1983</li>
+                <li><strong>Nationality:</strong> Bangadeshi</li>
+                <li><strong>Civil Status:</strong> Married</li>
+                <li><strong>Present Position:</strong> Professor, Khulna University of Engineering and Technology</li>
+            </ul>
+        </div>
+        <div id="biography">
+            <h3>Biography</h3>
+            <p>Welcome to my personal webpage! I am a professor in the Department of Electrical and Electronic Engineering at the Khulna university of Engineering & Technology where I have been a faculty member since 2007, with an expertise in computational materials engineering. I received my Ph.D. in Electrical Engineering from the University of Fukui in 2014. I'm a recipient of Monbukagakshu(MEXT) scholarship by Japan Government and President’s International Fellowship Initiative (PIFI) Award. I'm authored more than 100 peer-reviewed publications in esteemed journals and international conferences. I'm a member of IEEE and IEB, and actively participate in journal paper and grant reviewing at the international level.</p>
+        </div>
     </section>
 
     <section id="research">
-        <h2>Research</h2>
+        <h2>Research Interests</h2>
         <p>My research focuses on the atomistic modeling of nanomaterials using density functional theory, molecular dynamics, and machine learning. My group has contributed significantly to the design and development of novel nanomaterials for nanoelectronic, energy, and quantum information science applications.</p>
+    </section>
+
+    <section id="highlights">
+        <h2>Research Highlights</h2>
+        <ul>
+            <li>Discovery of a new method for large-scale synthesis of graphene</li>
+            <li>Development of nanocomposite materials with enhanced electronic, thermal, and mechanical properties.</li>
+        </ul>
     </section>
 
     <section id="publications">
         <h2>Publications</h2>
-        <ul>
-            <li>Publication 1 - Title and details</li>
-            <li>Publication 2 - Title and details</li>
-            <!-- Add more publications here -->
+        <ul id="publication-list">
+            <!-- Publications will be dynamically added here using JavaScript -->
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Feel free to contact me via email at <a href="sheraj_kuet@eee.kuet.ac.bd">sheraj_kuet@eee.kuet.ac.bd</a>.</p>
+        <p>Feel free to reach out to me via the contact form below:</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2023 Dr. Md. Sherajul Islam</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
