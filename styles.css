@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li, form {
+body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
     margin: 0;
     padding: 0;
 }
@@ -36,15 +36,25 @@ section {
     padding: 2rem;
 }
 
-#about div {
+#personal-info {
     margin-bottom: 2rem;
     padding: 1rem;
     border: 1px solid #ccc;
     background-color: #f4f4f4;
 }
 
-#about h3 {
+#personal-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#personal-info li {
     margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+#personal-info li strong {
+    font-weight: bold;
 }
 
 #highlights ul {
@@ -67,4 +77,11 @@ section {
 #contact-form textarea,
 #contact-form button {
     margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
 }
