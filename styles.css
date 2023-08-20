@@ -8,11 +8,11 @@ body {
     font-family: Arial, sans-serif;
 }
 #profile-picture {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 10px; /* Add margin for spacing from the top and right edges */
-    z-index: 1000; /* Ensure the image appears above other content */
+    position: absolute;
+    top: 1rem; /* Adjust the top distance as needed */
+    right: 1rem; /* Adjust the right distance as needed */
+    max-width: 100px; /* Adjust the maximum width as needed */
+    border-radius: 50%; /* Make the image circular */
 }
 
 header {
