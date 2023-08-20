@@ -7,6 +7,13 @@ body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
 body {
     font-family: Arial, sans-serif;
 }
+#profile-picture {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px; /* Add margin for spacing from the top and right edges */
+    z-index: 1000; /* Ensure the image appears above other content */
+}
 
 header {
     background-color: #333;
