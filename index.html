@@ -63,12 +63,27 @@
             max-height: 400px; /* Adjust the maximum height as needed */
             object-fit: cover;
         }
+
+        /* Style for team member images */
+        .team-member-image {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Style for publication images */
+        .publication-image {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="SMN.jpg" alt="Nanomaterials Lab Logo" class="logo"> <!-- Add your logo image here -->
-        <h1>Nanomaterials Laboratory</h1>
+        <h1>Computational Nanomaterials Laboratory</h1>
     </header>
     <nav>
         <ul>
@@ -87,18 +102,41 @@
     <div class="content" id="research">
         <h2>Research</h2>
         <p>Describe the research activities of your laboratory in this section.</p>
+        <img src="research.jpg" alt="Research Image" class="publication-image"> <!-- Add research image -->
+        <!-- Add research information here -->
     </div>
     <div class="content" id="team">
         <h2>Our Team</h2>
         <p>Introduce the members of your laboratory and their roles.</p>
+        <!-- Add team member information with images -->
+        <div class="team-member">
+            <img src="SMN.jpg" alt="Team Member 1" class="team-member-image">
+            <p>Name: Md. Sherajul Islam<br>Role: Principal Investigator</p>
+        </div>
+        <div class="team-member">
+            <img src="syed.jpg" alt="Team Member 2" class="team-member-image">
+            <p>Name: Abu Syed Md. Jannatul Islam<br>Role: PhD Student</p>
+        </div>
+        <!-- Add more team members as needed -->
     </div>
     <div class="content" id="publications">
         <h2>Publications</h2>
         <p>List your laboratory's publications and research papers here.</p>
+        <!-- Add publication information with images -->
+        <div class="publication">
+            <img src="publication-1.jpg" alt="Publication 1" class="publication-image">
+            <p>Title: Research Paper 1<br>Authors: John Doe, Jane Smith<br>Date: January 2023</p>
+        </div>
+        <div class="publication">
+            <img src="publication-2.jpg" alt="Publication 2" class="publication-image">
+            <p>Title: Research Paper 2<br>Authors: Jane Smith, Mary Johnson<br>Date: February 2023</p>
+        </div>
+        <!-- Add more publications as needed -->
     </div>
     <div class="content" id="contact">
         <h2>Contact Us</h2>
-        <p>Provide contact information for your laboratory.</p>
+        <p>For inquiries and collaborations, please contact us at:</p>
+        <p>Email: <a href="sheraj_kuet@eee.kuet.ac.bd">csheraj_kuet@eee.kuet.ac.bd</a></p>
     </div>
 
     <script>
