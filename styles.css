@@ -18,7 +18,7 @@ header {
 header .logo {
     position: absolute;
     top: 1rem; /* Adjust the top distance as needed */
-    right: 1rem; /* Adjust the right distance as needed */
+    left: 1rem; /* Adjust the right distance as needed */
     max-width: 100px; /* Adjust the maximum width as needed */
     border-radius: 50%; /* Make the image circular */
 }
