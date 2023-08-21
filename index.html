@@ -3,54 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computational Nanomaterials Laboratory</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nanomaterials Laboratory</title>
+    <style>
+        /* CSS styles for the website */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* CSS styles for the different sections */
+        .section {
+            display: none;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <h1>Computational Nanomaterials Laboratory</h1>
-        <button id="toggleNav">Toggle Navigation</button>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Nanomaterials Laboratory</h1>
     </header>
-    
-    <section id="home">
-        <h2>Welcome to Our Lab</h2>
-        <p>We are dedicated to advancing nanomaterials research.</p>
-    </section>
-    
-    <section id="research">
-        <h2>Our Research</h2>
-        <p>Learn about our ongoing research projects in the field of nanomaterials.</p>
-    </section>
-    
-    <section id="team">
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('research')">Research</a></li>
+            <li><a href="#" onclick="showSection('team')">Team</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content" id="home">
+        <h2>Welcome to our Nanomaterials Laboratory</h2>
+        <p>This is the home section. Here you can provide a brief introduction to your laboratory.</p>
+    </div>
+    <div class="content" id="research">
+        <h2>Research</h2>
+        <p>Describe the research activities of your laboratory in this section.</p>
+    </div>
+    <div class="content" id="team">
         <h2>Our Team</h2>
-        <p>Meet the researchers and scientists who make up our laboratory.</p>
-    </section>
-    
-    <section id="publications">
-        <h2>Publications</h2>
-        <p>Explore our latest publications and research papers.</p>
-    </section>
-    
-    <section id="contact">
+        <p>Introduce the members of your laboratory and their roles.</p>
+    </div>
+    <div class="content" id="contact">
         <h2>Contact Us</h2>
-        <p>Get in touch with us for inquiries and collaboration opportunities.</p>
-    </section>
-    
-    
-    <footer>
-        <p>&copy; 2023 Computational Nanomaterials Laboratory. All rights reserved.</p>
-    </footer>
+        <p>Provide contact information for your laboratory.</p>
+    </div>
 
-    <script src="script.js"></script>
+    <script>
+        // JavaScript function to show/hide sections
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('.content');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            // Show the selected section
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.style.display = 'block';
+            }
+        }
+
+        // Show the 'home' section by default
+        showSection('home');
+    </script>
 </body>
 </html>
