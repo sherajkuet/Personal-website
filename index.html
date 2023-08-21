@@ -18,12 +18,22 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: relative;
+        }
+
+        header .logo {
+            position: absolute;
+            top: 20px; /* Adjust top position as needed */
+            right: 20px; /* Adjust right position as needed */
+            max-width: 100px;
         }
 
         nav {
             background-color: cyan; /* Change navigation bar color to cyan */
             color: #fff;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
         nav ul {
@@ -34,12 +44,6 @@
         nav li {
             display: inline;
             margin-right: 20px;
-        }
-
-        .logo {
-            max-width: 100px;
-            display: block;
-            margin: 0 auto;
         }
 
         .content {
@@ -53,12 +57,19 @@
         .section {
             display: none;
         }
+
+        /* Style for the home page image */
+        .home-image {
+            width: 100%;
+            max-height: 400px; /* Adjust the maximum height as needed */
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="SMN.jpg" alt="Nanomaterials Lab Logo" class="logo"> <!-- Add your logo image here -->
-        <h1>Computational Nanomaterials Laboratory</h1>
+        <h1>Compuatational Nanomaterials Laboratory</h1>
     </header>
     <nav>
         <ul>
@@ -70,6 +81,7 @@
         </ul>
     </nav>
     <div class="content" id="home">
+        <img src="home.jpg" alt="Home Page Image" class="home-image"> <!-- Add your home page image here -->
         <h2>Welcome to Computational Nanomaterials Laboratory</h2>
         <p>This is the home section. Here you can provide a brief introduction to your laboratory.</p>
     </div>
