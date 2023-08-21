@@ -17,9 +17,12 @@ header {
 
 header .logo {
     position: absolute;
-    top: 10px;
-    left: 10px; /* Adjusted to place the logo in the top left corner */
-    max-width: 100px;
+    top: 1rem; /* Adjust the top distance as needed */
+    right: 1rem; /* Adjust the right distance as needed */
+    max-width: 100px; /* Adjust the maximum width as needed */
+    border-radius: 50%; /* Make the image circular */
+}
+
 }
 
 header h1 {
