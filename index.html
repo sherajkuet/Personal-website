@@ -28,6 +28,7 @@
             right: 10px; /* Adjust right position as needed */
             max-width: 100px;
         }
+
         header h1 {
             margin: 0; /* Remove default margin for h1 */
         }
@@ -38,7 +39,6 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            margin-top: 0;
         }
 
         nav ul {
@@ -88,8 +88,8 @@
 </head>
 <body>
     <header>
-        <img src="SMN.jpg" alt="Nanomaterials Lab Logo" class="logo"> <!-- Add your logo image here -->
         <h1>Computational Nanomaterials Laboratory</h1>
+        <img src="SMN.png" alt="Nanomaterials Lab Logo" class="logo"> <!-- Add your logo image here -->
     </header>
     <nav>
         <ul>
@@ -131,11 +131,11 @@
         <!-- Add publication information with images -->
         <div class="publication">
             <img src="publication-1.jpg" alt="Publication 1" class="publication-image">
-            <p>Title: Research Paper 1<br>Authors: Y. zamil eta al.<br>Date: January 2023</p>
+            <p>Title: Research Paper 1<br>Authors: John Doe, Jane Smith<br>Date: January 2023</p>
         </div>
         <div class="publication">
             <img src="publication-2.jpg" alt="Publication 2" class="publication-image">
-            <p>Title: Research Paper 2<br>Authors: N. Ferdous et al.<br>Date: February 2023</p>
+            <p>Title: Research Paper 2<br>Authors: Jane Smith, Mary Johnson<br>Date: February 2023</p>
         </div>
         <!-- Add more publications as needed -->
     </div>
@@ -149,20 +149,4 @@
         // JavaScript function to show/hide sections
         function showSection(sectionId) {
             // Hide all sections
-            var sections = document.querySelectorAll('.content');
-            for (var i = 0; i < sections.length; i++) {
-                sections[i].style.display = 'none';
-            }
-
-            // Show the selected section
-            var section = document.getElementById(sectionId);
-            if (section) {
-                section.style.display = 'block';
-            }
-        }
-
-        // Show the 'home' section by default
-        showSection('home');
-    </script>
-</body>
-</html>
+            var sections
