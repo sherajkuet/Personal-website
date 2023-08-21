@@ -27,6 +27,7 @@ header .logo {
 
 header h1 {
     margin: 0;
+    padding-left: 120px; /* Adjusted for logo width and spacing */
 }
 
 nav {
