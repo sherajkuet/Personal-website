@@ -17,10 +17,9 @@ header {
 
 header .logo {
     position: absolute;
-    top: 1rem; /* Adjust the top distance as needed */
-    right: 1rem; /* Adjust the right distance as needed */
-    max-width: 100px; /* Adjust the maximum width as needed */
-    border-radius: 50%; /* Make the image circular */
+    top: 10px;
+    left: 10px; /* Adjusted to place the logo in the top left corner */
+    max-width: 100px;
 }
 
 header h1 {
@@ -38,7 +37,7 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Reset margin for ul to eliminate spacing */
+    margin: 0;
 }
 
 nav li {
@@ -51,6 +50,7 @@ nav li {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
+    text-align: center;
 }
 
 /* CSS styles for the different sections */
@@ -70,10 +70,11 @@ nav li {
     object-fit: cover;
     border-radius: 50%;
 }
+
 .publication-image {
     max-width: 200px;
     max-height: 200px;
     object-fit: cover;
     display: block;
-    margin: 0 auto; /* Center-align the publication images */
+    margin: 0 auto;
 }
