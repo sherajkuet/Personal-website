@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nanomaterials Laboratory</title>
+    <title>Computational Nanomaterials Laboratory</title>
     <style>
         /* CSS styles for the website */
         body {
@@ -14,14 +14,14 @@
         }
 
         header {
-            background-color: #333;
+            background-color: teal; /* Change header color to teal */
             color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         nav {
-            background-color: #444;
+            background-color: cyan; /* Change navigation bar color to cyan */
             color: #fff;
             text-align: center;
         }
@@ -36,6 +36,12 @@
             margin-right: 20px;
         }
 
+        .logo {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
         .content {
             max-width: 800px;
             margin: 20px auto;
@@ -47,23 +53,24 @@
         .section {
             display: none;
         }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>Nanomaterials Laboratory</h1>
+        <img src="SMN.jpg" alt="Nanomaterials Lab Logo" class="logo"> <!-- Add your logo image here -->
+        <h1>Computational Nanomaterials Laboratory</h1>
     </header>
     <nav>
         <ul>
             <li><a href="#" onclick="showSection('home')">Home</a></li>
             <li><a href="#" onclick="showSection('research')">Research</a></li>
             <li><a href="#" onclick="showSection('team')">Team</a></li>
+            <li><a href="#" onclick="showSection('publications')">Publications</a></li> <!-- Added Publications link -->
             <li><a href="#" onclick="showSection('contact')">Contact</a></li>
         </ul>
     </nav>
     <div class="content" id="home">
-        <h2>Welcome to our Nanomaterials Laboratory</h2>
+        <h2>Welcome to Computational Nanomaterials Laboratory</h2>
         <p>This is the home section. Here you can provide a brief introduction to your laboratory.</p>
     </div>
     <div class="content" id="research">
@@ -73,6 +80,10 @@
     <div class="content" id="team">
         <h2>Our Team</h2>
         <p>Introduce the members of your laboratory and their roles.</p>
+    </div>
+    <div class="content" id="publications">
+        <h2>Publications</h2>
+        <p>List your laboratory's publications and research papers here.</p>
     </div>
     <div class="content" id="contact">
         <h2>Contact Us</h2>
