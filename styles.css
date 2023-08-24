@@ -21,6 +21,7 @@ header .logo {
     left: 1rem; /* Adjust the right distance as needed */
     max-width: 100px; /* Adjust the maximum width as needed */
     border-radius: 50%; /* Make the image circular */
+    margin-right: 10px
 }
 
 }
