@@ -68,6 +68,13 @@ nav li {
     max-height: 400px;
     object-fit: cover;
 }
+.resrearch-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
 
 .team-member-image {
     max-width: 200px;
